@@ -1,8 +1,38 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"></head>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
     <body>
-
-        <h3>This is an H3</h3>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <div class="score-container">
+                    <p id="home-score" class="score">0</p>
+                </div>
+                
+                <div class="score-button">
+                    <button onclick="homeplus1()">+1</button>
+                    <button onclick="homeplus2()">+2</button>
+                    <button onclick="homeplus3()">+3</button>
+                </div>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <div class="score-container">
+                    <p id="guest-score" class="score">0</p>
+                </div>
+                
+                <div class="score-button">
+                    <button onclick="guestplus1()">+1</button>
+                    <button onclick="guestplus2()">+2</button>
+                    <button onclick="guestplus3()">+3</button>
+                </div>
+            </div>
+            
+            <button class="reset-score" onclick="resetScore()">RESET SCORE</button>
+        </div>
         
+        
+        <script src="index.js"></script>
     </body>
 </html>
